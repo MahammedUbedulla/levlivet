@@ -4,14 +4,15 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- JS -->
 <script src="js/jquery.min.js"></script>
-<script src="js/angular.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/ui-bootstrap.js"></script>
 <script src="js/stats.js"></script>
 <script src="js/angular-typed.min.js"></script>
 <script src="app.js"></script>
 <script src="controllers/search-controller.js"></script>
 <script src="directives/search-header.js"></script>
-
+<script src="directives/search-box.js"></script>
 
 <script type="text/javascript">
 function loadJS(src, callback) {
@@ -32,38 +33,17 @@ loadJS("js/zepto.js", function(){
 });
 </script>
 
-
 <html ng-app="levLivet" ng-controller="searchController">
-<body>
-    <canvas></canvas>
+<canvas></canvas>
+<body class="container search-body">
     <!-- Search -->
-    <div class="row search-position">
-        <div class="col-md-2 col-md-offset-3 col-lg-6">
-            <div class="heading">
-                <h1 class="text-center">
-                    <span>
-                        Search for
-                    </span>
-                    <search-header></search-header>
-                    <span id="typed"></span>
-                </h1>
+    <div class="custom-width search-position">
+        <div class="wrapper">
+            <div class="inner1">
+                <search-header></search-header>                    
             </div>
-
-            <div class="input-group">
-              <input type="text" class="form-control input-lg" placeholder="Search for Specialities, Doctors, Clinics..">
-              <span class="input-group-btn">
-                    <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Filter
-                        <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Doctor</a></li>
-                        <li><a href="#">Speciality</a></li>
-                        <li><a href="#">Clinic</a></li>
-                      </ul>
-                    </div>
-              </span>
+            <div class="inner2">
+                <search-box></search-box>
             </div>
         </div>
     </div>
