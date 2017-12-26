@@ -6,15 +6,20 @@ import {Routes, RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchResultsService } from './@services/search-results.service';
 
 
 import { AppComponent } from './app.component';
 import { SearchResultsComponent } from './@views/search-results/search-results.component';
+import { HeaderComponent } from './@views/header/header.component';
+import { FooterComponent } from './@views/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchResultsComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
         FormsModule,
@@ -24,7 +29,7 @@ import { SearchResultsComponent } from './@views/search-results/search-results.c
     ReactiveFormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [SearchResultsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

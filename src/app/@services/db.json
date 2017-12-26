@@ -1,0 +1,147 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "doctorsData":[{
+  "exception": null,
+  "doctorElsMds":   {
+     "docId": 1,
+     "docRegNum": "RK001",
+     "docName": "Dr.Radha Krishna",
+     "docGender": "M",
+     "docDob": "1983-01-01",
+     "docQualification": "MBBS",
+     "docPrimarySpecId": 1,
+     "docSpecId_02": null,
+     "docSpecId_03": null,
+     "docSpecId_04": null,
+     "docSpecId_05": null,
+     "docProfessionalSmry": "MBBS FRCS London",
+     "docPrimaryContactPh": "12345678",
+     "docSecondaryPh": null,
+     "docStatus": "A",
+     "docEmail": null,
+     "docPicLoc": "pic2.jpg",
+     "docWebsite": null,
+	 "docExp":15,
+	 "docSpl":"Dental, Dental Pain special",
+	 "docHosp":"Apollo Hospital",
+	 "docLoc" :"Film Nagar",
+	 "docFee" :300,
+	 "docAvi": "MON - SAT",
+	 "docRate":91
+  },
+  "facilityInfoElsMdlsList": [],
+  "symptomElsMdls": []
+},
+{
+  "exception": null,
+  "doctorElsMds":   {
+     "docId": 1,
+     "docRegNum": "RK002",
+     "docName": "Dr.Rama Krishna",
+     "docGender": "M",
+     "docDob": "1983-01-01",
+     "docQualification": "MBBS",
+     "docPrimarySpecId": 1,
+     "docSpecId_02": null,
+     "docSpecId_03": null,
+     "docSpecId_04": null,
+     "docSpecId_05": null,
+     "docProfessionalSmry": "MBBS FRCS London",
+     "docPrimaryContactPh": "12345678",
+     "docSecondaryPh": null,
+     "docStatus": "A",
+     "docEmail": null,
+     "docPicLoc": "pic1.jpg",
+     "docWebsite": null,
+	 "docExp":10,
+	 "docSpl":"Dental, Dental Pain special",
+	 "docHosp":"Maa Hospital",
+	 "docLoc" :"Sanath Nagar",
+	 "docFee" :200,
+	 "docAvi": "MON - SAT",
+	 "docRate":51
+  },
+  "facilityInfoElsMdlsList": [],
+  "symptomElsMdls": []
+},
+{
+  "exception": null,
+  "doctorElsMds":   {
+     "docId": 1,
+     "docRegNum": "RK003",
+     "docName": "Dr.Gopi Krishna",
+     "docGender": "M",
+     "docDob": "1983-01-01",
+     "docQualification": "MBBS",
+     "docPrimarySpecId": 1,
+     "docSpecId_02": null,
+     "docSpecId_03": null,
+     "docSpecId_04": null,
+     "docSpecId_05": null,
+     "docProfessionalSmry": "MBBS FRCS London",
+     "docPrimaryContactPh": "12345678",
+     "docSecondaryPh": null,
+     "docStatus": "A",
+     "docEmail": null,
+     "docPicLoc": "pic1.jpg",
+     "docWebsite": null,
+	 "docExp":8,
+	 "docSpl":"Dental, Dental Pain special",
+	 "docHosp":"Nilima Hospital",
+	 "docLoc" :"Sanath Nagar",
+	 "docFee" :800,
+	 "docAvi": "MON - SAT",
+	 "docRate":90
+  },
+  "facilityInfoElsMdlsList": [],
+  "symptomElsMdls": []
+},{
+  "exception": null,
+  "doctorElsMds":  {
+     "docId": 1,
+     "docRegNum": "RK004",
+     "docName": "Dr.Mohan Krishna",
+     "docGender": "M",
+     "docDob": "1983-01-01",
+     "docQualification": "MBBS",
+     "docPrimarySpecId": 1,
+     "docSpecId_02": null,
+     "docSpecId_03": null,
+     "docSpecId_04": null,
+     "docSpecId_05": null,
+     "docProfessionalSmry": "MBBS FRCS London",
+     "docPrimaryContactPh": "12345678",
+     "docSecondaryPh": null,
+     "docStatus": "A",
+     "docEmail": null,
+     "docPicLoc": "pic2.jpg",
+     "docWebsite": null,
+	 "docExp":10,
+	 "docSpl":"Dental, Dental Pain special",
+	 "docHosp":"Maa Hospital",
+	 "docLoc" :"Sanath Nagar",
+	 "docFee" :200,
+	 "docAvi": "MON - SAT",
+	 "docRate":51
+  },
+  "facilityInfoElsMdlsList": [],
+  "symptomElsMdls": []
+}]
+
+}

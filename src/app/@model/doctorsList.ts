@@ -1,0 +1,32 @@
+export class Doctor {
+  constructor(
+      public docId: number,
+      public docRegNum: string,
+      public exception: any,
+      public doctorElsMds: any,
+      public text: string,
+      public docName: string,
+      public docGender: string,
+      public docDob: Date,
+      public docQualification: string,
+      public docPrimarySpecId: number,
+      public docSpecId_02: null,
+      public docSpecId_03: null,
+      public docSpecId_04: null,
+      public docSpecId_05: null,
+      public docProfessionalSmry: string,
+      public  docPrimaryContactPh: number,
+      public docSecondaryPh: null,
+      public docStatus: string,
+      public docEmail: null,
+      public docPicLoc: null,
+      public  docWebsite: null,
+      public docExp: number,
+      public docSpl: string,
+      public docHosp: string,
+      public docLoc: string,
+      public docFee: number,
+      public  docAvi: string,
+      public docRate: number
+      ) {}
+}
