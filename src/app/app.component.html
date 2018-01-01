@@ -1,4 +1,25 @@
 <app-header></app-header>
-<app-search-results></app-search-results>
-<app-footer></app-footer>
-
+<div class="container-fluid">
+    <div class="left">
+        <div class="item active" [routerLink]="['/dash-board']">
+            <span class="glyphicon material-icons">av_timer</span> <span>Dashboard</span></div>
+        <div class="item" [routerLink]="['/patient-management']">
+            <span class="glyphicon material-icons">perm_identity</span> <span> Patient Management</span></div>
+        <div class="item">
+            <span class="glyphicon material-icons">assignment</span> <span>Lab Reports</span></div>
+        <div class="item">
+            <span class="glyphicon material-icons">monetization_on</span> <span>Billing</span></div>
+        <div class="item">
+            <span class="glyphicon material-icons">trending_up</span> <span>Aptryt Insights</span></div>
+        <div class="item">
+            <span class="glyphicon material-icons">message</span> <span>Messages</span></div>
+        <div class="item">
+            <span class="glyphicon material-icons">settings</span> <span>Preferences</span></div>
+        <div class="item">
+            <span class="menu-icon glyphicon material-icons">exit_to_app</span> <span>Exit</span></div>
+    </div>
+    <div class="right">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<app-footer></app-footer>       

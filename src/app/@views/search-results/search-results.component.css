@@ -2,6 +2,11 @@
     height:135px;
     overflow: hidden;
 }
+
+.container{
+    margin-left: 3.5vw !important;
+}
+
 .banner img{
     width:100%;
 }

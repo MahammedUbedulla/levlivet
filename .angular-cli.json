@@ -20,9 +20,22 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/jquery/dist/jquery.min.js"
+        "libraries/bootstrap/css/bootstrap.min.css",
+        "libraries/fonts/simple-line-icons.min.css",
+        "libraries/css/Collapsible-sidebar-left-or-right--Content-overlay1.css",
+        "libraries/css/Navigation-with-Button1.css",
+        "libraries/css/SIdebar-Responsive-2.css",
+        "libraries/css/SIdebar-Responsive-21.css",
+        "libraries/css/styles.css",
+        "libraries/css/icon.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "libraries/js/jquery.min.js",
+        "libraries/bootstrap/js/bootstrap.min.js",
+        "libraries/js/jquery.nicescroll.min.js",
+        "libraries/js/Collapsible-sidebar-left-or-right--Content-overlay.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

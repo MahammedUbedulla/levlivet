@@ -13,20 +13,29 @@ import { AppComponent } from './app.component';
 import { SearchResultsComponent } from './@views/search-results/search-results.component';
 import { HeaderComponent } from './@views/header/header.component';
 import { FooterComponent } from './@views/footer/footer.component';
-
+import { PatientManagementComponent } from './@views/patient-management/patient-management.component';
+import { RouterRoutingModule } from './@routing/router-routing.module';
+import { FollowUpListComponent } from './@views/patient-management/follow-up-list/follow-up-list.component';
+import { FollowUpDetailsComponent } from './@views/patient-management/follow-up-details/follow-up-details.component';
+import { DashBoardComponent } from './@views/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
     SearchResultsComponent,
     HeaderComponent,
     FooterComponent,
+    PatientManagementComponent,
+    FollowUpListComponent,
+    FollowUpDetailsComponent,
+    DashBoardComponent,
   ],
   imports: [
         FormsModule,
         BrowserAnimationsModule,
-    HttpModule,
+        HttpModule,
     BrowserModule,
     ReactiveFormsModule,
+    RouterRoutingModule,
     NgbModule.forRoot()
   ],
   providers: [SearchResultsService],

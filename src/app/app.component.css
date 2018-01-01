@@ -1,0 +1,64 @@
+
+.left, .right {
+        float:left;
+        height:950px;
+    }
+    
+.left {
+        background: #00464f;
+        display: inline-block;
+        white-space: nowrap;
+        width: 4%;
+        transition: width 1s ;
+        z-index: 100;
+        position: absolute;
+    }
+
+.right {
+        background: #fff;
+        width: 100%;
+    }    
+
+.left:hover {
+        width: 250px;
+    }    
+    
+.item:hover {
+        background-color:rgba(126, 169, 39, 0.3);;
+        }
+        
+.left .glyphicon {
+        margin:15px;
+        width:20px;
+        color:#fff;
+    }
+    
+.right .glyphicon {
+        color:#a9a9a9;
+    }
+span.glyphicon.glyphicon-refresh{
+    font-size:17px;
+    vertical-align: middle !important;
+    }
+    
+.item {
+        height:50px;
+        overflow:hidden;
+        color:#fff;
+        vertical-align: middle;
+    }
+.title {
+        background-color:#eee;
+        border-style:solid;
+        border-color:#ccc;
+        border-width:1px;
+        box-sizing: border-box;
+    }
+
+    span{
+        vertical-align: middle;
+    }
+
+    .container-fluid {
+        padding-left: 0px;
+    }
