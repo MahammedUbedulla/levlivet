@@ -24,11 +24,9 @@ export class WeatherappComponent implements OnInit {
     if(navigator.geolocation){
       navigator.geolocation.getCurrentPosition(function(position){
         this.location = position.coords;
-        console.log(position.coords); 
         this.getWeatherDetailsJSON().subscribe(
           (docDetails:any) => {
             this.weatherDetails = docDetails;
-            console.log(this.weatherDetails);
           },
            err => {
                console.log(err);

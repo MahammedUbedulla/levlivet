@@ -22,9 +22,7 @@ export class FullcalendarComponent implements OnInit,AfterViewInit,AfterContentC
   }
 
   ngAfterViewInit(){
-    debugger
-    setTimeout(()=>{
-      // console.log("100ms after ngAfterViewInit ");
+    setTimeout(() => {
       $('app-fullcalendar').fullCalendar(this.options);
     }, 100)
   }

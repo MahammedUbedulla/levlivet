@@ -46,6 +46,7 @@ table{
     border-radius: 5px;
     display: inline-block;
     border: 1px solid #5a4989 !important;
+    padding: 15px;
  }
  .searchfield
  {
