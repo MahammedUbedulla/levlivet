@@ -1,25 +1,46 @@
 <app-header></app-header>
-<div class="container-fluid">
-    <div class="left">
-        <div class="item active" [routerLink]="['/dash-board']">
-            <span class="glyphicon material-icons">av_timer</span> <span>Dashboard</span></div>
-        <div class="item" [routerLink]="['/patient-management']">
-            <span class="glyphicon material-icons">perm_identity</span> <span> Patient Management</span></div>
-        <div class="item">
-            <span class="glyphicon material-icons">assignment</span> <span>Lab Reports</span></div>
-        <div class="item">
-            <span class="glyphicon material-icons">monetization_on</span> <span>Billing</span></div>
-        <div class="item">
-            <span class="glyphicon material-icons">trending_up</span> <span>Aptryt Insights</span></div>
-        <div class="item">
-            <span class="glyphicon material-icons">message</span> <span>Messages</span></div>
-        <div class="item">
-            <span class="glyphicon material-icons">settings</span> <span>Preferences</span></div>
-        <div class="item">
-            <span class="menu-icon glyphicon material-icons">exit_to_app</span> <span>Exit</span></div>
-    </div>
-    <div class="right">
-        <router-outlet></router-outlet>
-    </div>
-</div>
+<!-- <div class="page-container"> -->
+        <div class="sidebar-menu">
+          <div class="menu">
+            <ul id="menu">
+              <li id="menu-home" ><a href="/dash-board"><span class="glyphicon material-icons">av_timer</span><span>Dashboard</span></a></li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">perm_identity</span><span>Patient Management</span></a>
+              
+                <ul>
+                  <li><a href="#"> Demographics</a></li>
+                  <li><a href="#"> Symptoms</a></li>
+                  <li><a href="#"> Vitals</a></li>
+                  <li><a href="#"> History</a></li>
+                  <li><a href="#">Past Medical History</a></li>
+                  <li><a href="#"> Treatment Plan</a></li>
+                </ul>
+              
+              </li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">assignment</span><span>Lab Reports</span></a></li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">monetization_on</span><span>Billing</span></a></li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">trending_up</span><span>Aptryt Insights</span></a></li>
+              <li><a href="#"><span class="glyphicon material-icons">message</span><span>Messages</span></a>
+              </li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">settings</span><span>Preferences</span></a>
+                <ul>
+                  <li><a href="#"> Profile</a></li>
+                  <li><a href="#"> Add Labs</a></li>
+                  <li><a href="#"> Add Imaging</a></li>
+                  <li><a href="#"> Add Pharmacy</a></li>
+                  <li><a href="#">Templates</a></li>
+                  <li><a href="#">Admin</a></li>
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Import Patient</a></li>
+                  <li><a href="#">EHR Users</a></li>
+                  <li><a href="#">Clinic Management</a></li>
+                </ul>
+              </li>
+              <li id="menu-home" ><a href="#"><span class="glyphicon material-icons">exit_to_app</span><span>Exit</span></a></li>
+            </ul>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="right">
+            <router-outlet></router-outlet>
+        </div>
 <app-footer></app-footer>       

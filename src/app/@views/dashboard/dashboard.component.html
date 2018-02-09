@@ -1,3 +1,167 @@
-<div class="container">
-  dashboard Screen here!
+<div class="containerdash">
+   <div class="col-md-12 paddingleft1">
+  
+    <div class="addpatientbox purplebackgroundcolor marginright30 white">
+            Add Patient
+    </div>
+    <div class="box marginright30">
+        <button class="red">05</button>
+        <button class="yellow">Patient Visits</button>
+    </div>
+    <div class="weatherbox">
+        <app-weatherapp></app-weatherapp>
+    </div>
+</div>
+<div class="col-md-10 paddingleft1 margintop50 marginbottom20">      
+    <div class="col-md-3  whitebox marginright30 ">
+        <app-doughnut-chart></app-doughnut-chart>
+    </div>
+    <div class="calender whitebox ">
+            <app-fullcalendar [options]="calendarOptions"></app-fullcalendar>
+    </div>
+    
+</div> 
+    <div class="searchtable paddingleft1 margintop15">
+        <h4>Appointment In Queue</h4>
+        <div class="searchfield"><input  placeholder="Search"  [(ngModel)]="searchText1">
+            <span class="glyphicon glyphicon-remove " (click)="clearSearch(1)"></span>
+        </div>
+        <table class="table">
+            <tr >
+                <th (click)="sort('docId')"> S.NO
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'docId', 'fa-sort-asc': (column == 'docId' && reverse), 'fa-sort-desc': (column == 'docId' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+                <th (click)="sort('patientName')">PatientName
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'patientName', 'fa-sort-asc': (column == 'patientName' && reverse), 'fa-sort-desc': (column == 'patientName' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+                <th (click)="sort('age')">Age
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'age', 'fa-sort-asc': (column == 'age' && reverse), 'fa-sort-desc': (column == 'age' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+                <th (click)="sort('gender')">Gender
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'gender', 'fa-sort-asc': (column == 'gender' && reverse), 'fa-sort-desc': (column == 'gender' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+                <th (click)="sort('contactNumber')">ContactNumber
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'contactNumber', 'fa-sort-asc': (column == 'contactNumber' && reverse), 'fa-sort-desc': (column == 'contactNumber' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+                <th (click)="sort('status')">Status
+                    <i class="fa" [ngClass]="{'fa-sort': column != 'status', 'fa-sort-asc': (column == 'status' && reverse), 'fa-sort-desc': (column == 'status' && !reverse) }"
+                        aria-hidden="true"> </i>
+                </th>
+            </tr>
+            <tr *ngFor="let appointmentQueue of appointmentQueueList |customfilter : searchText1| orderBy: order:reverse:'case-insensitive' let i=index">
+                <td>{{appointmentQueue.docId}}</td>
+                <td>{{appointmentQueue.patientName}}</td>
+                <td>{{appointmentQueue.age}}</td>
+                <td>{{appointmentQueue.gender}}</td>
+                <td>{{appointmentQueue.contactNumber}}</td>
+                <td>{{appointmentQueue.status}}</td>
+
+            </tr>
+        </table>
+    </div>
+    <div class="searchtable paddingleft1 margintop15">
+            <h4>Discharge Queue</h4>
+            <div class="searchfield"><input placeholder="Search"  [(ngModel)]="searchText2">
+                <span class="glyphicon glyphicon-remove "(click)="clearSearch(2)"></span></div>
+        <table class="table">
+                <tr>
+                    <th (click)="sort('docId')"> S.NO
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'docId', 'fa-sort-asc': (column == 'docId' && reverse), 'fa-sort-desc': (column == 'docId' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                    <th (click)="sort('patientName')">PatientName
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'patientName', 'fa-sort-asc': (column == 'patientName' && reverse), 'fa-sort-desc': (column == 'patientName' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                    <th (click)="sort('age')">Age
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'age', 'fa-sort-asc': (column == 'age' && reverse), 'fa-sort-desc': (column == 'age' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                    <th (click)="sort('gender')">Gender
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'gender', 'fa-sort-asc': (column == 'gender' && reverse), 'fa-sort-desc': (column == 'gender' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                    <th (click)="sort('contactNumber')">ContactNumber
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'contactNumber', 'fa-sort-asc': (column == 'contactNumber' && reverse), 'fa-sort-desc': (column == 'contactNumber' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                    <th (click)="sort('status')">Status
+                        <i class="fa" [ngClass]="{'fa-sort': column != 'status', 'fa-sort-asc': (column == 'status' && reverse), 'fa-sort-desc': (column == 'status' && !reverse) }"
+                            aria-hidden="true"> </i>
+                    </th>
+                </tr>
+                <tr class="tablecontent"*ngFor="let dischargeQueue of dischargeQueueList |customfilter : searchText2| orderBy: order:reverse:'case-insensitive' let i=index">
+                    <td>{{dischargeQueue.docId}}</td>
+                    <td>{{dischargeQueue.patientName}}</td>
+                    <td>{{dischargeQueue.age}}</td>
+                    <td>{{dischargeQueue.gender}}</td>
+                    <td>{{dischargeQueue.contactNumber}}</td>
+                    <td>{{dischargeQueue.status}}</td>
+    
+                </tr>
+            </table>
+    </div>
+    <div class="searchtable paddingleft1 margintop15">
+            <h4>Reports Queue</h4>
+          
+            <div class="searchfield"><input  placeholder="Search"  [(ngModel)]="searchText3">
+                <span class="glyphicon glyphicon-remove " (click)="clearSearch(3)"></span></div>
+            <table class="table">
+                    <tr>
+                        <th (click)="sort('docId')"> S.NO
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'docId', 'fa-sort-asc': (column == 'docId' && reverse), 'fa-sort-desc': (column == 'docId' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('patientName')">TestType
+                                <i class="fa" [ngClass]="{'fa-sort': column != 'patientName', 'fa-sort-asc': (column == 'patientName' && reverse), 'fa-sort-desc': (column == 'patientName' && !reverse) }"
+                                    aria-hidden="true"> </i>
+                            </th>
+                        <th (click)="sort('patientName')">PatientName
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'patientName', 'fa-sort-asc': (column == 'patientName' && reverse), 'fa-sort-desc': (column == 'patientName' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('age')">Age
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'age', 'fa-sort-asc': (column == 'age' && reverse), 'fa-sort-desc': (column == 'age' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('gender')">Gender
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'gender', 'fa-sort-asc': (column == 'gender' && reverse), 'fa-sort-desc': (column == 'gender' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('contactNumber')">ContactNumber
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'contactNumber', 'fa-sort-asc': (column == 'contactNumber' && reverse), 'fa-sort-desc': (column == 'contactNumber' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('status')">ResultStatus
+                            <i class="fa" [ngClass]="{'fa-sort': column != 'status', 'fa-sort-asc': (column == 'status' && reverse), 'fa-sort-desc': (column == 'status' && !reverse) }"
+                                aria-hidden="true"> </i>
+                        </th>
+                        <th (click)="sort('status')">ResultSignOff
+                                <i class="fa" [ngClass]="{'fa-sort': column != 'status', 'fa-sort-asc': (column == 'status' && reverse), 'fa-sort-desc': (column == 'status' && !reverse) }"
+                                    aria-hidden="true"> </i>
+                            </th>
+                    </tr>
+                    <tr *ngFor="let reportsQueue of reportQueueList |customfilter : searchText3| orderBy: order:reverse:'case-insensitive' let i=index">
+                        <td>{{reportsQueue.docId}}</td>
+                        <td>{{reportsQueue.testType}}</td>
+                        <td>{{reportsQueue.patientName}}</td>
+                        <td>{{reportsQueue.age}}</td>
+                        <td>{{reportsQueue.gender}}</td>
+                        <td>{{reportsQueue.contactNumber}}</td>
+                        <td>{{reportsQueue.resultStatus}}</td>
+                        <td>{{reportsQueue.resultSignOff}}</td>
+        
+                    </tr>
+                </table>
+    </div>
+    
+    
+
+
+
 </div>

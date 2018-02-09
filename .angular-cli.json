@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+        "../node_modules/fullcalendar/dist/fullcalendar.min.css",
         "libraries/bootstrap/css/bootstrap.min.css",
         "libraries/fonts/simple-line-icons.min.css",
         "libraries/css/Collapsible-sidebar-left-or-right--Content-overlay1.css",

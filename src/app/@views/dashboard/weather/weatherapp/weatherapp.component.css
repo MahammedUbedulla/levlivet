@@ -1,0 +1,27 @@
+
+h5 {
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    padding-top: 5px;
+    text-align: left;
+    color: black;
+}
+.temp
+{
+    color: black; 
+    display: inline-grid;
+    position: absolute;
+
+}
+
+img
+{
+    margin-left: -10px;
+}
+
+
+.details
+{
+    display: inline-block;
+}

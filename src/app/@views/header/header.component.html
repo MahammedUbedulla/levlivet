@@ -1,25 +1,55 @@
 <header>
 
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-        <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/logo_background.png" alt="aptryt"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse pull-right d-flex justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto d-flex justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
-            </li>
-           
-          </ul>
-         
-        </div>
-      </div>    
-      </nav>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="img-responsive" src="assets/logo_background.png" alt="aptryt">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse pull-right d-flex justify-content-end" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav mr-auto d-flex ">
+          <li class="nav-item">
+            <h5>Hi,Jennifier</h5>
+          </li>
+          <li class="nav-item profile">
+            <img src="assets/male_doc.png" />
+          </li>
+          <li class="nav-item">
+            <i class="large material-icons">keyboard_arrow_down</i>
+
+          </li>
+
+        </ul> -->
+        <div class="dropdown">
+          <div class="dropbtn" id="button" (click)="showdropdown()"><ul class="navbar-nav mr-auto d-flex ">
+              <li class="nav-item">
+                <h5>Hi,Jennifier</h5>
+              </li>
+              <li class="nav-item profile">
+                <img src="assets/male_doc.png" />
+              </li>
+              <li class="nav-item">
+                <i class="large material-icons">keyboard_arrow_down</i>
     
+              </li>
+    
+            </ul>
+            <!-- <span class="down-caret"></span> -->
+          </div>
+          <div class="dropdown-content" id="content">
+              <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">LogOut</a>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
 </header>

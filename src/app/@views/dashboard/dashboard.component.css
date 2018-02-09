@@ -1,1 +1,219 @@
+table,td,tr {
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    background: white;
 
+    }
+    .table th
+    {
+        color: white!important;
+        background:#5a4989;
+        border:1px solid #5a4989;
+
+    }
+    .table tr
+    {
+        color: black!important
+    }
+    .tablecontent th{
+        color: black!important
+    }
+
+.dataTables_filter {
+        float: right;
+        /* text-align: right; */
+    }
+table{
+    border:1px solid #5a4989;
+}
+ .containerdash
+ {
+    background: #F5F5F5;
+    margin-left: 190px;
+    padding-top: 25px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;
+ }
+ 
+ .whitebox
+ {
+    background: white; 
+    margin-right:  15px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #5a4989 !important;
+ }
+ .searchfield
+ {
+     text-align: right;
+     width: 100%;
+     margin-bottom: 5px;
+     border:1px solid #5a4989;
+     display: inline-flex;
+    
+ }  
+ .button, input
+ {
+    width: 100%;
+ }
+ 
+
+
+ .red{
+     background-color: white;
+     width: 20%;
+    color: #5a4989;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #5a4989 !important;
+ }
+ 
+ .yellow{
+    background-color:#5a4989;
+    width: 80%;
+    border: none;
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: -5px;
+ }
+.margintop15
+{
+margin-top: 50px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+#search label {
+    position: absolute;
+    left: 17px;
+    top: 51px;
+}
+.chart
+{
+    width: 400px;
+    display: inline-block;
+}
+.marginleft20
+{
+    margin-left: 40px;
+}
+
+.paddingleft1
+{
+    padding-left: 1px;
+}
+.calender
+{
+    width: 36%;
+    border:1px solid #5a4989;
+}
+
+.box
+{
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin-left: -5px;
+
+}
+.addpatientbox
+{
+    width: 21%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    font-size: 19px;
+    padding-top: 12px;
+}
+
+.purplebackgroundcolor{
+    background: #5a4989; 
+}
+.marginright30
+{
+    margin-right:  70px;
+}
+
+
+.donutcolorbox
+{
+    color: white;
+    display: inline-block;
+    border:1px solid #5a4989;
+}
+
+.chartcolorbox
+{
+    width: 800px;
+    color: white;
+    display: inline-block;
+
+}
+
+.weatherbox
+{
+    width: 25%;
+    height: 180px;
+    border-radius: 5px;
+    text-align: left;
+    background: white;
+    display: inline-block; 
+    position: absolute;
+    border:1px solid #5a4989;
+    margin-top: 3px;
+}
+.searchfield input{
+    width: 98% !important;
+}
+.searchtable
+{
+    width: 56%;
+}
+.glyphicon
+{
+    padding-top: 5px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+h4
+{
+    color: #5a4989;
+}
+.box h4 {
+    color: white !important;
+}
+.marginbottom20
+{
+    margin-bottom: 50px;
+}
+.margintop50
+{
+margin-top: 60px;
+}

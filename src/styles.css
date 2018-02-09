@@ -8,3 +8,8 @@ body{
 .pull-left{
     float:left!important;
 }
+
+
+.fc-scroller.fc-day-grid-container{
+    height: 100% !important;
+}

@@ -1,0 +1,41 @@
+[   {
+     "docId": 1,
+     "patientName": "Dr.Radha Krishna",
+     "age": "22",
+      "gender":"M",
+     "contactNumber": "9966710508",
+     "status": "Yes"
+  },
+  {
+     "docId": 2,
+     "patientName": "Dr.Leela Kumari",
+     "age": "32",
+      "gender":"F",
+     "contactNumber": "9966710548",
+     "status": "Yes"
+  },
+  {
+     "docId": 3,
+     "patientName": "Dr.Ganesh Chary",
+     "age": "52",
+      "gender":"M",
+     "contactNumber": "9966710568",
+     "status": "No"
+  },
+  {
+     "docId": 4,
+     "patientName": "Dr.Srinivas Yadav",
+     "age": "42",
+      "gender":"M",
+     "contactNumber": "9966710528",
+     "status": "Yes"
+  }, {
+     "docId": 5,
+     "patientName": "Dr.Mahesh Reddy",
+     "age": "33",
+      "gender":"M",
+     "contactNumber": "9966710538",
+     "status": "Yes"
+  }
+]
+

@@ -1,0 +1,53 @@
+{
+  
+  "reportQueueList": [   {
+     "docId": 1,
+     "testType":"V",
+     "patientName": "Dr.Radha Krishna",
+     "age": "22",
+      "gender":"M",
+     "contactNumber": "9966710508",
+     "resultStatus": "Yes",
+     "resultSignOff": "Yes"
+  },
+  {
+     "docId": 2,
+     "testType":"V",
+     "patientName": "Dr.Leela Kumari",
+     "age": "32",
+      "gender":"F",
+     "contactNumber": "9966710548",
+     "resultStatus": "Yes",
+     "resultSignOff": "Yes"
+  },
+  {
+     "docId": 3,
+     "testType":"V",
+     "patientName": "Dr.Ganesh Chary",
+     "age": "52",
+      "gender":"M",
+     "contactNumber": "9966710568",
+     "resultStatus": "Yes",
+     "resultSignOff": "Yes"
+  },
+  {
+     "docId": 4,
+     "testType":"V",
+     "patientName": "Dr.Srinivas Yadav",
+     "age": "42",
+      "gender":"M",
+     "contactNumber": "9966710528",
+     "resultStatus": "Yes",
+     "resultSignOff": "Yes"
+  }, {
+     "docId": 5,
+     "testType":"V",
+     "patientName": "Dr.Mahesh Reddy",
+     "age": "33",
+      "gender":"M",
+     "contactNumber": "9966710538",
+     "resultStatus": "Yes",
+     "resultSignOff": "Yes" 
+  }
+]
+}
