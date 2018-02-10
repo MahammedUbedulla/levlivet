@@ -180,15 +180,13 @@ label {
 
 .weatherbox
 {
-    width: 25%;
-    height: 180px;
+    width: 20%;
     border-radius: 5px;
     text-align: left;
     background: white;
     display: inline-block; 
     position: absolute;
     border:1px solid #5a4989;
-    margin-top: 3px;
 }
 .searchfield input{
     width: 98% !important;

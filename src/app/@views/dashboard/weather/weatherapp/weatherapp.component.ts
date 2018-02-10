@@ -4,6 +4,7 @@ import { WeatherDetails } from '../../../../@model/weatherDetails';
 import { HttpClient } from 'selenium-webdriver/http';
 import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs';
+import { error } from 'selenium-webdriver';
 @Component({
   selector: 'app-weatherapp',
   templateUrl: './weatherapp.component.html',
@@ -12,13 +13,11 @@ import { Observable } from 'rxjs';
 export class WeatherappComponent implements OnInit {
   weatherDetails: WeatherDetails = null;
   location: any = {
-    "latitude": 136,
-    "longitude": 193
+    "latitude": 17.3850,
+    "longitude": 78.4867
   };
   constructor(private http: Http) { 
   }
-
-  
 
   ngOnInit() {
     if(navigator.geolocation){
@@ -31,21 +30,34 @@ export class WeatherappComponent implements OnInit {
            err => {
                console.log(err);
            });
-      }.bind(this));
+      }.bind(this), err => {
+        // Setting location to Hyderabad if user blocks location.
+        this.location = {
+          "latitude" : 17.3850, 
+          "longitude": 78.4867
+        }
+        this.getWeatherDetailsJSON().subscribe(
+          (docDetails:any) => {
+            this.weatherDetails = docDetails;
+          },
+           err => {
+               console.log(err);
+           });
+      });
    }
   }
   settings: WeatherSettings = {
     location: {
-      cityName: 'hyderabad,india'
+      cityName: 'Hyderabad, India'
     },
     backgroundColor: '#347c57',
     color: '#ffffff',
     width: 'auto',
     height: 'auto',
-    showWind: false,
+    showWind: true,
     scale: TemperatureScale.CELCIUS,
     showDetails: false,
-    showForecast: false,
+    showForecast: true,
     layout: WeatherLayout.NARROW,
     language: 'en'
   };

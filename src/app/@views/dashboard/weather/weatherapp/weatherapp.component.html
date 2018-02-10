@@ -1,9 +1,9 @@
 <div class="col-md-12 " *ngIf="weatherDetails">
-<h3>{{weatherDetails?.name }}</h3 >
+    <h3>{{weatherDetails?.name }}</h3>
 
-<img class="col-mod-5" src="https://ssl.gstatic.com/onebox/weather/128/sunny.png" /> 
-<div class="col-mod-5 temp">
-<h3 >Current: {{weatherDetails?.main.temp}}&#8451;</h3>
-<p>  min: {{weatherDetails?.main.temp_min}} &#8451;, max: {{weatherDetails?.main.temp_max}} &#8451;</p>
-</div>
+    <img class="col-mod-5 icon" src="http://openweathermap.org/img/w/{{weatherDetails.weather[0].icon}}.png" />
+    <div class="col-mod-5 temp">
+        <h3>Current: {{weatherDetails?.main.temp}}&#8451;</h3>
+        <p> min: {{weatherDetails?.main.temp_min}} &#8451;, max: {{weatherDetails?.main.temp_max}} &#8451;</p>
+    </div>
 </div>
