@@ -18,10 +18,8 @@ a:active { text-decoration: none; }
 .sidebar-menu {
   width: 45px;
   transition: width 1s ;
-  height: 190%;
   top: 67px;
   position: absolute;
-  /* right: 0; */
   bottom: 0;
   background-color: #E8E8E8;
   color: #aaabae;
