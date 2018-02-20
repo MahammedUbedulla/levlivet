@@ -1,0 +1,125 @@
+<div class="maincontainer col-lg-12">
+  <div class="row input-pad">
+      <h3  class="md-headline purpleColor ">History</h3>
+  </div>
+<div class="bodycontainer">
+      <div class="col-lg-6 input-pad">
+          <table class="full-width" cellspacing="0">
+                <tr class ="margintop50">
+                          <mat-form-field class="full-width">
+                              <textarea matInput placeholder="Current medication"></textarea>
+                          </mat-form-field>
+                      </tr>
+
+                      <tr>
+                              <mat-form-field class="full-width">
+                                  <textarea matInput placeholder="Surgery History"></textarea>
+                              </mat-form-field>
+                          </tr>
+
+                          <tr>
+                                  <mat-form-field class="full-width">
+                                      <textarea matInput placeholder="Previous Doctor"></textarea>
+                                  </mat-form-field>
+                              </tr>
+
+                              <tr>
+                                      <mat-form-field class="full-width">
+                                          <textarea matInput placeholder="Places Visited"></textarea>
+                                      </mat-form-field>
+                                  </tr>
+                        </table>
+        </div>
+
+        <div class="col-lg-6 input-pad">
+              <h4  class="md-headline purpleColor ">Social</h4>
+              <table class=" bordertable full-width" cellspacing="0">
+                      <tr class="margintop50">
+                          <td >
+                              <mat-form-field>
+                                  <mat-select placeholder="Smoking states">
+                                      <mat-option *ngFor="let visit of purposeOfVisit" [value]="visit.value">
+                                          {{ visit.viewValue }}
+                                      </mat-option>
+                                  </mat-select>
+                              </mat-form-field>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="">
+                              <mat-form-field>
+                                  <mat-select placeholder="Alcohol">
+                                      <mat-option *ngFor="let psymptoms of primarySymptoms" [value]="psymptoms.value">
+                                          {{ psymptoms.viewValue }}
+                                      </mat-option>
+                                  </mat-select>
+                              </mat-form-field>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td class="">
+                              <mat-form-field>
+                                  <mat-select placeholder="Tobocco">
+                                      <mat-option *ngFor="let sSymptoms of secondarySymptoms" [value]="sSymptoms.value">
+                                          {{ sSymptoms.viewValue }}
+                                      </mat-option>
+                                  </mat-select>
+                              </mat-form-field>
+                          </td>
+                      </tr>
+
+                      <tr>
+                              <td class="">
+                                  <mat-form-field>
+                                      <mat-select placeholder="Drugs">
+                                          <mat-option *ngFor="let sSymptoms of secondarySymptoms" [value]="sSymptoms.value">
+                                              {{ sSymptoms.viewValue }}
+                                          </mat-option>
+                                      </mat-select>
+                                  </mat-form-field>
+                              </td>
+                          </tr>
+
+                          <tr>
+                                  <td class="">
+                                      <mat-form-field>
+                                          <mat-select placeholder="Sleep Schedule Time">
+                                              <mat-option *ngFor="let sSymptoms of secondarySymptoms" [value]="sSymptoms.value">
+                                                  {{ sSymptoms.viewValue }}
+                                              </mat-option>
+                                          </mat-select>
+                                      </mat-form-field>
+                                  </td>
+                              </tr>
+                  </table>
+                  <h3  class="md-headline purpleColor ">Family History</h3>
+                  <table class="full-width familytable" cellspacing="0">
+
+                      <tr>
+                          <th>RelationShip</th>
+                          <th>Heart Disease</th>
+                          <th>Diabetes</th>
+                          <th>Treatment</th>
+                          <th>Cancer</th>
+                      </tr>
+                        <tr>
+                            <td>Father</td>
+                            <td>Y</td>
+                            <td>N</td>
+                            <td>Y</td>
+                            <td>N</td>
+                        </tr>
+                        <tr>
+                              <td>Mother</td>
+                              <td>Y</td>
+                              <td>Y</td>
+                              <td>N</td>
+                              <td>Y</td>
+                              
+                          </tr>
+                      </table>
+            </div>
+            
+            <button mat-button mat-raised-button pull-right>Submit</button>
+          </div>
+</div>

@@ -1,0 +1,58 @@
+.full-width
+{
+    width: 100%;
+    
+}
+
+.intake-form
+{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.input-pad
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contact-pad {
+    padding-top: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+}
+.mat-form-field  {
+    display: inline;
+    position: relative;
+    text-align: left;
+    color: #5a4989;
+}
+.mat-radio-group
+{
+    display: inline;
+    position: relative;
+    text-align: left; 
+    color: #5a4989;
+}
+button
+{
+    background-color:#5a4989;
+    color: white;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.purpleColor
+{
+    color: #5a4989;  
+}
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;   
+}

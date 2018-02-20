@@ -1,0 +1,94 @@
+.full-width
+{
+    width: 100%;
+   
+    
+}
+
+.intake-form
+{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.input-pad
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.contact-pad {
+    padding-top: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 2px;
+}
+.mat-form-field  {
+    display: inline;
+    position: relative;
+    text-align: left;
+    color: #5a4989;
+}
+.mat-radio-group
+{
+    display: inline;
+    position: relative;
+    text-align: left; 
+    color: #5a4989;
+}
+button
+{
+    background-color:#5a4989;
+    color: white;
+    margin-top: 50px;
+    align-self: center;
+    margin-left: 650px;
+}
+.purpleColor
+{
+    color: #5a4989;  
+}
+.bordertable
+{
+    border: 1px solid black;
+    text-align: left;
+}
+.familytable
+{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: left;
+   
+}
+
+.familytable  tr td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.familytable  tr th {
+    border: 1px solid black;
+    padding: 10px;
+}
+.margintop50
+{
+    margin-top: 50px;
+}
+.bordertable tr td{
+padding-left: 20px;
+padding-right: 20px;
+}
+.bodycontainer
+{
+    margin-top: 10px;
+}
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;   
+}

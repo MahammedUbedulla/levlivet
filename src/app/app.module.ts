@@ -25,7 +25,44 @@ import { DoughnutChartComponent } from './@views/dashboard/charts/doughnut-chart
 import { AngularWeatherWidgetModule, WeatherApiName } from 'angular-weather-widget';
 import { WeatherappComponent } from './@views/dashboard/weather/weatherapp/weatherapp.component';
 import { FullcalendarComponent } from './@views/dashboard/fullcalendar/fullcalendar.component';
-
+import { SyptomsComponent } from './@views/patient-management/syptoms/syptoms.component';
+import { PatienthistoryComponent } from './@views/patient-management/patienthistory/patienthistory.component';
+import { VitalsComponent } from './@views/patient-management/vitals/vitals.component';
+import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatFormFieldModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatStepperModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +76,10 @@ import { FullcalendarComponent } from './@views/dashboard/fullcalendar/fullcalen
     CategoryPipe,
     DoughnutChartComponent,
     WeatherappComponent,
-    FullcalendarComponent
+    FullcalendarComponent,
+    SyptomsComponent,
+    PatienthistoryComponent,
+    VitalsComponent
   ],
   imports: [
     AngularWeatherWidgetModule.forRoot({
@@ -55,7 +95,41 @@ import { FullcalendarComponent } from './@views/dashboard/fullcalendar/fullcalen
     RouterRoutingModule,
     OrderModule,
     ChartsModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatFormFieldModule,
     NgbModule.forRoot()
+
   ],
   providers: [SearchResultsService],
   bootstrap: [AppComponent]

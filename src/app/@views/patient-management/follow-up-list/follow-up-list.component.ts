@@ -12,7 +12,7 @@ export class FollowUpListComponent implements OnInit {
   onClickListItem: Function;
   constructor() {
     this.title = "Fallow-up"
-    this.patientManagementList = ["Demographics", "Symptoms", "Vitals", "Allergies", "Medications History","Family History","Social History","Past Medical History","Treatment Plan","Review","Order and Results","checkout"];
+    //this.patientManagementList = ["Demographics", "Symptoms", "Vitals", "Allergies", "Medications History","Family History","Social History","Past Medical History","Treatment Plan","Review","Order and Results","checkout"];
     this.onClickListItem = function (index) {
      this.clickedItem = index;
     }
