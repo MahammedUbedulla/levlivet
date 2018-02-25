@@ -42,6 +42,9 @@ button
     color: white;
     margin-left: 500px;
     margin-top: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
 }
 .purpleColor
 {
@@ -55,4 +58,22 @@ button
     overflow-y: auto;
     height:950px; 
     width: 100%;   
+}
+.nextbutton
+{
+    float: right;
+}
+.bordertable
+{
+    border: 1px solid #5a4989;
+    text-align: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.marginTop30
+{
+    margin-top: 30px;
+}
+.marginBottom30{
+    margin-bottom: 30px;
 }
