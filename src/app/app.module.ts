@@ -28,6 +28,8 @@ import { FullcalendarComponent } from './@views/dashboard/fullcalendar/fullcalen
 import { SyptomsComponent } from './@views/patient-management/syptoms/syptoms.component';
 import { PatienthistoryComponent } from './@views/patient-management/patienthistory/patienthistory.component';
 import { VitalsComponent } from './@views/patient-management/vitals/vitals.component';
+import { AptrytDashboardComponent } from './@views/aptryt-dashboard/aptryt-dashboard.component';
+import { PatientTreatmentPlanComponent } from './@views/patient-management/patient-treatment-plan/patient-treatment-plan.component';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -63,6 +65,7 @@ import {
   MatToolbarModule,
   MatTooltipModule,
 } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +82,9 @@ import {
     FullcalendarComponent,
     SyptomsComponent,
     PatienthistoryComponent,
-    VitalsComponent
+    VitalsComponent,
+    AptrytDashboardComponent,
+    PatientTreatmentPlanComponent
   ],
   imports: [
     AngularWeatherWidgetModule.forRoot({
