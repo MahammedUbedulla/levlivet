@@ -30,6 +30,12 @@ import { PatienthistoryComponent } from './@views/patient-management/patienthist
 import { VitalsComponent } from './@views/patient-management/vitals/vitals.component';
 import { AptrytDashboardComponent } from './@views/aptryt-dashboard/aptryt-dashboard.component';
 import { PatientTreatmentPlanComponent } from './@views/patient-management/patient-treatment-plan/patient-treatment-plan.component';
+import { PreferenceDashboardComponent } from './@views/preference-dashboard/preference-dashboard.component';
+import { PreferenceFacilityComponent } from './@views/preference-dashboard/preference-facility/preference-facility.component';
+import { PreferenceLabsComponent } from './@views/preference-dashboard/preference-labs/preference-labs.component';
+import { PreferenceImagingComponent } from './@views/preference-dashboard/preference-imaging/preference-imaging.component';
+import { PreferenceSurgicalComponent } from './@views/preference-dashboard/preference-surgical/preference-surgical.component';
+
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -66,6 +72,7 @@ import {
   MatTooltipModule,
 } from '@angular/material';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,7 +91,12 @@ import {
     PatienthistoryComponent,
     VitalsComponent,
     AptrytDashboardComponent,
-    PatientTreatmentPlanComponent
+    PatientTreatmentPlanComponent,
+    PreferenceDashboardComponent,
+    PreferenceFacilityComponent,
+    PreferenceLabsComponent,
+    PreferenceImagingComponent,
+    PreferenceSurgicalComponent
   ],
   imports: [
     AngularWeatherWidgetModule.forRoot({

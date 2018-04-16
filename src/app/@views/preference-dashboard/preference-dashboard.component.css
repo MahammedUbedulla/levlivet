@@ -1,0 +1,18 @@
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;   
+}
+.box
+{
+    border: 1px solid black;
+    width: 200px;
+}
+.margintop30
+{
+    margin-top: 30px;
+}

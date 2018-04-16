@@ -8,6 +8,13 @@ import { DashBoardComponent } from '../@views/dashboard/dashboard.component';
 import { VitalsComponent } from '../@views/patient-management/vitals/vitals.component';
 import { SyptomsComponent } from '../@views/patient-management/syptoms/syptoms.component';
 import { PatienthistoryComponent } from '../@views/patient-management/patienthistory/patienthistory.component';
+import { AptrytDashboardComponent } from '../@views/aptryt-dashboard/aptryt-dashboard.component';
+import { PatientTreatmentPlanComponent } from '../@views/patient-management/patient-treatment-plan/patient-treatment-plan.component';
+import { PreferenceDashboardComponent } from '../@views/preference-dashboard/preference-dashboard.component';
+import { PreferenceLabsComponent } from '../@views/preference-dashboard/preference-labs/preference-labs.component';
+import { PreferenceFacilityComponent } from '../@views/preference-dashboard/preference-facility/preference-facility.component';
+import { PreferenceImagingComponent } from '../@views/preference-dashboard/preference-imaging/preference-imaging.component';
+import { PreferenceSurgicalComponent } from '../@views/preference-dashboard/preference-surgical/preference-surgical.component';
 const routes: Routes = [
   { path: 'search-results', component: SearchResultsComponent },
   { path: 'patient-management', component: PatientManagementComponent },
@@ -15,6 +22,13 @@ const routes: Routes = [
   { path: 'patient-vitals', component: VitalsComponent },
   { path: 'patient-symptoms', component: SyptomsComponent },
   { path: 'patient-history', component: PatienthistoryComponent },
+  { path: 'aptryt-dashboard', component: AptrytDashboardComponent },
+  { path: 'preference-dashboard', component: PreferenceDashboardComponent },
+  { path: 'preference-labs', component: PreferenceLabsComponent },
+  { path: 'preference-facility', component: PreferenceFacilityComponent },
+  { path: 'preference-imaging', component: PreferenceImagingComponent },
+  { path: 'preference-surgical', component: PreferenceSurgicalComponent },
+ 
   { path: '**', redirectTo: 'dash-board' }
 ];
 
