@@ -21,7 +21,25 @@
     border:1px solid #5a4989;
 
 }
+
+.table td
+{
+    color: black!important;
+    background:#e4d8f4;
+    border:2px solid white;
+
+}
 .margin-left20
 {
     margin-left: 20px;
+}
+.shadded-color
+{
+    color: #5a4989;
+}
+button
+{   background: #F5F5F5;
+    border:none;
+    color: black;
+    text-decoration: underline;
 }
