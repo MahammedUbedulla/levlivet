@@ -1,0 +1,50 @@
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;   
+}
+.mat-form-field-infix
+    
+{
+    width: 50px !important;
+}
+
+
+.table th
+{
+    color: white!important;
+    background:#5a4989;
+    border-bottom:2px solid white;
+    border-right:0.5px solid white; 
+
+}
+
+.table td
+{
+    color: black!important;
+    background:#e4d8f4;
+    border: solid 2px white;
+
+
+}
+table tr td:last-child,
+table tr td:first-child
+{
+    border-right: none;
+  }
+
+.shadded-color
+{
+    color: #5a4989;
+}
+.margin50
+{
+    margin-top: 50px;
+    margin-left: -7px;
+    margin-bottom: 20px;
+}
+

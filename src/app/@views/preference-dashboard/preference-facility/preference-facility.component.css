@@ -1,0 +1,27 @@
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 90%;   
+}
+
+.mat-form-field
+{
+    width: 50px !important;
+    margin-left: 10px;
+} 
+  
+.table th
+{
+    color: white!important;
+    background:#5a4989;
+    border:1px solid #5a4989;
+
+}
+.margin-left20
+{
+    margin-left: 20px;
+}

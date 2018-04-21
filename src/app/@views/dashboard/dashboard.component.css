@@ -65,7 +65,7 @@ table{
 
 
  .red{
-     background-color: white;
+     background-color: white !important;
      width: 20%;
     color: #5a4989;
     padding-top: 12px;
@@ -81,7 +81,7 @@ table{
  }
  
  .yellow{
-    background-color:#5a4989;
+    background-color:#5a4989 !important;
     width: 80%;
     border: none;
     color: white;
@@ -127,7 +127,7 @@ label {
 }
 .calender
 {
-    width: 36%;
+    width: 30%;
     border:1px solid #5a4989;
 }
 
@@ -155,7 +155,7 @@ label {
 }
 
 .purplebackgroundcolor{
-    background: #5a4989; 
+    background: #5a4989 !important; 
 }
 .marginright30
 {
@@ -215,4 +215,8 @@ h4
 .margintop50
 {
 margin-top: 60px;
+}
+.float-left
+{
+    float: left;
 }

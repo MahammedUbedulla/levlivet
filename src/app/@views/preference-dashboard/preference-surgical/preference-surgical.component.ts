@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preference-surgical.component.css']
 })
 export class PreferenceSurgicalComponent implements OnInit {
-
+  private 
+  facilitys = [
+    {labname: 'abc', test:'Blood,Sugar',location:'Madhapur'},
+    {labname: 'abc', test:'Blood,Sugar',location:'Madhapur'},
+    {labname: 'abc', test:'Blood,Sugar',location:'Madhapur'},
+    {labname: 'abc', test:'Blood,Sugar',location:'Madhapur'},
+    
+  ];
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { 
   }
 
 }

@@ -1,0 +1,72 @@
+.maincontainer
+{
+    background: #F5F5F5;
+    padding-left: 160px;
+    overflow:scroll;
+    overflow-y: auto;
+    height:950px; 
+    width: 100%;  
+     
+}
+.table
+{
+    margin-bottom: 50px
+}
+.mat-form-field-infix
+    
+{
+    width: 50px !important;
+}
+.table th
+{
+    color: white!important;
+    background:#5a4989;
+    border:1px solid white;
+
+}
+
+.table td
+{
+    color: black!important;
+    background:#e4d8f4;
+    border:2px solid white;
+
+}
+ .table td:last-child {
+    background: #F5F5F5;
+    border:2px solid #F5F5F5;
+    }
+table tr td:nth-last-child(2)
+
+{
+    border-right: none;
+}
+
+.margin50
+{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.shadded-color
+{
+    color: #5a4989;
+}
+.searchicon
+{
+    margin-top: 10px;
+}
+.margin-left20
+{
+    margin-left: 20px;
+}
+button
+{
+    background:#5a4989;
+    color: white;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

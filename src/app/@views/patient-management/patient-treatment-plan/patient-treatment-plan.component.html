@@ -1,3 +1,120 @@
-<p>
-  patient-treatment-plan works!
-</p>
+<div class="maincontainer row">
+    <div class="row input-pad">
+        <h3 class="md-headline purpleColor shadded-color ">Medication</h3>
+
+        <h5 class="shadded-color margin50">Prescription</h5>
+        <div class="row">
+          <div class="col s8">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Drug</th>
+                    <th>Strength</th>
+                    <th>Quantity</th>
+                    <th>Dosage</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let prescription of prescriptions; let i = index">
+                    <td>{{prescription.drug}}</td>
+                    <td>{{prescription.strength}}</td>
+                    <td>{{prescription.quantity}}</td>
+                    <td>{{prescription.dosage}}</td>
+                    <td>{{prescription.duration}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+      </div>
+      <div class="col s4">
+          <mat-form-field>
+              <mat-select placeholder="Pharmacy">
+                  <mat-option *ngFor="let pharmancy of pharmancy" [value]="pharmancy.value">
+                      {{ pharmancy.viewValue }}
+                  </mat-option>
+              </mat-select>
+          </mat-form-field>
+        </div>
+     
+      </div>
+        <h5 class="shadded-color margin50">Lab</h5>
+        <div class="row">
+        <div class="col s6">
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>Test name</th>
+                    <th>Quantity</th>
+                    <th>Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let lab of labs; let i = index">
+                    <td>{{lab.testname}}</td>
+                    <td>{{lab.quantity}}</td>
+                    <td>{{lab.instruction}}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="col s6">
+          <mat-form-field>
+              <mat-select placeholder="Labs Selection">
+                  <mat-option *ngFor="let labs of labsSeclection" [value]="labs.value">
+                      {{ labs.viewValue }}
+                  </mat-option>
+              </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+        <h5 class="shadded-color margin50">Imaging</h5>
+        <div class="row">
+          <div class="col s6">
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>Test name</th>
+                    <th>Quantity</th>
+                    <th>Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let imaging of imagings; let i = index">
+                    <td>{{imaging.testname}}</td>
+                    <td>{{imaging.quantity}}</td>
+                    <td>{{imaging.instruction}}</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="col s6">
+            
+        </div>
+
+      </div>
+        <h5 class="shadded-color margin50">Surgical</h5>
+<div class="row">
+  <div class="col s6">
+        <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>Procedure</th>
+                    <th>Instructions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let surgical of surgicals; let i = index">
+                    <td>{{surgical.procedure}}</td>
+                    <td>{{surgical.instruction}}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="col s6">
+          
+      </div>
+      </div>
+        
+    </div>
+</div>

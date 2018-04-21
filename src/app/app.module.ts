@@ -73,6 +73,7 @@ import {
 } from '@angular/material';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -97,6 +98,7 @@ import {
     PreferenceLabsComponent,
     PreferenceImagingComponent,
     PreferenceSurgicalComponent
+  
   ],
   imports: [
     AngularWeatherWidgetModule.forRoot({

@@ -15,6 +15,7 @@ import { PreferenceLabsComponent } from '../@views/preference-dashboard/preferen
 import { PreferenceFacilityComponent } from '../@views/preference-dashboard/preference-facility/preference-facility.component';
 import { PreferenceImagingComponent } from '../@views/preference-dashboard/preference-imaging/preference-imaging.component';
 import { PreferenceSurgicalComponent } from '../@views/preference-dashboard/preference-surgical/preference-surgical.component';
+
 const routes: Routes = [
   { path: 'search-results', component: SearchResultsComponent },
   { path: 'patient-management', component: PatientManagementComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'preference-facility', component: PreferenceFacilityComponent },
   { path: 'preference-imaging', component: PreferenceImagingComponent },
   { path: 'preference-surgical', component: PreferenceSurgicalComponent },
+  {path:'patient-treatment-plan',component:PatientTreatmentPlanComponent},
  
   { path: '**', redirectTo: 'dash-board' }
 ];

@@ -1,3 +1,133 @@
-<p>
-  preference-facility works!
-</p>
+<div class="maincontainer row">
+    <div class="row input-pad">
+        <h3 class="md-headline purpleColor ">Facility</h3>
+
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Working days</th>
+                    <th>Working hrs</th>
+                    <th>Avg.Apt time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let field of fieldArray; let i = index">
+                    <td>
+                        <input class="form-control" type="text" id="newAttributeCode" [(ngModel)]="newAttribute.name" name="newAttributeCode" />
+                    </td>
+                    <td>
+                        <mat-checkbox>M</mat-checkbox>
+                        <mat-checkbox>TU</mat-checkbox>
+                        <mat-checkbox>W</mat-checkbox>
+                        <mat-checkbox>TH</mat-checkbox>
+                        <mat-checkbox>F</mat-checkbox>
+                        <mat-checkbox>S</mat-checkbox>
+                        <mat-checkbox>SU</mat-checkbox>
+                    </td>
+                    <td>
+                        <div class="dropdownfield">
+                            <mat-form-field>
+                                <mat-select placeholder="AM">
+                                    <mat-option *ngFor="let hours of hours" [value]="hours.value">
+                                        {{ hours.value }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+    
+                            <mat-form-field>
+                                <mat-select placeholder="PM">
+                                    <mat-option *ngFor="let hours of hours" [value]="hours.value">
+                                        {{ hours.value }}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            </div>
+                    </td>
+                    <td>
+                        <div class="row margin-left20">
+                            <div class="col s3">
+                                New Patient</div>
+                            <div class="col s1">
+                                <input placeholder="HH" id="first_name" type="text" class="validate">
+                            </div>
+                            <div class="col s1">
+                                <input placeholder="MM" id="first_name" type="text" class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row margin-left20">
+                            <div class="col s3">
+                                Existing Patient</div>
+                            <div class="col s1">
+                                <input placeholder="HH" id="first_name" type="text" class="validate">
+                            </div>
+                            <div class="col s1">
+                                <input placeholder="MM" id="first_name" type="text" class="validate">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="form-control" type="text" id="newAttributeCode" [(ngModel)]="newAttribute.name" name="newAttributeCode" />
+                    </td>
+                    <td>
+                        <mat-checkbox>M</mat-checkbox>
+                        <mat-checkbox>TU</mat-checkbox>
+                        <mat-checkbox>W</mat-checkbox>
+                        <mat-checkbox>TH</mat-checkbox>
+                        <mat-checkbox>F</mat-checkbox>
+                        <mat-checkbox>S</mat-checkbox>
+                        <mat-checkbox>SU</mat-checkbox>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <mat-select placeholder="AM">
+                                <mat-option *ngFor="let hours of hours" [value]="hours.value">
+                                    {{ hours.value }}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <mat-form-field>
+                            <mat-select placeholder="PM">
+                                <mat-option *ngFor="let hours of hours" [value]="hours.value">
+                                    {{ hours.value }}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <div class="row margin-left20">
+                            <div class="col s3">
+                                New Patient</div>
+                            <div class="col s1">
+                                <input placeholder="HH" id="first_name" type="text" class="validate">
+                            </div>
+                            <div class="col s1">
+                                <input placeholder="MM" id="first_name" type="text" class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row margin-left20">
+                            <div class="col s3">
+                                Existing Patient</div>
+                            <div class="col s1">
+                                <input placeholder="HH" id="first_name" type="text" class="validate">
+                            </div>
+                            <div class="col s1">
+                                <input placeholder="MM" id="first_name" type="text" class="validate">
+                            </div>
+                        </div>
+
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-default" type="button" (click)="addFieldValue()">+ Add Row</button>
+
+    </div>
+</div>

@@ -1,3 +1,69 @@
-<p>
-  preference-surgical works!
-</p>
+<div class="maincontainer row">
+    <div class="  input-pad">
+        <h3 class="md-headline margin-left20 shadded-color ">Preferences</h3>
+        <div class="row margin-left20">
+         <div class="input-field col s2 ">
+                <input placeholder="Search by Test" id="first_name" type="text" class="validate">
+             </div>
+            <div class="col s1 searchicon"> 
+                    <i class="material-icons">search</i>
+            </div>
+            </div>
+        <div class="col s12">
+            <div class="col s6">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>Lab Name</th>
+                            <th>Tests available</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let facility of facilitys; let i = index">
+
+                            <td>{{facility.labname}}</td>
+                            <td>{{facility.test}}</td>
+                            <td>{{facility.location}}</td>
+                            <td><button class="" type="button" (click)="addFieldValue()">ADD </button></td> 
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col s6">
+
+            </div>
+        </div>
+        <h5 class="margin50 shadded-color">Your Prefered Labs</h5>
+        <div class="col s12">
+            <div class="col s6">
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                            <th>Lab Name</th>
+                            <th>Tests available</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let facility of facilitys; let i = index">
+
+                            <td>{{facility.labname}}</td>
+                            <td>{{facility.test}}</td>
+                            <td>{{facility.location}}</td>
+                            <td><button class="" type="button" (click)="addFieldValue()">DELETE</button></td> 
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col s6">
+
+            </div>
+
+        </div>
+    </div>
+</div>

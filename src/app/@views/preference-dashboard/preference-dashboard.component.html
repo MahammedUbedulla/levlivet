@@ -1,35 +1,40 @@
-<div class="maincontainer col-lg-12">
+<div class="maincontainer row">
   <div class="row input-pad">
-      <h3  class="md-headline purpleColor ">Symptoms</h3>
+      <h3  class="md-headline purpleColor ">Preferences</h3>
      
  
-  <div class="col-lg-12 margintop30 ">
-    <div class="col-lg-6">
+  <div class="col s12 margintop30 ">
+    <div class="col s6">
        <div class="box" [routerLink]="['/preference-facility']">
-          
-        <span class="glyphicon glyphicon-remove "></span>
+          <div class="img-box">
+        <img class="img-responsive" src="assets/facility.png" alt="facility"/>
          <div class="name">Facility</div>
       </div>
     </div>
-      
-    <div class="col-lg-6">
+      </div>
+    <div class="col s6">
         <div class="box" [routerLink]="['/preference-labs']">
-            <span class="glyphicon glyphicon-remove "></span>
+            <div class="img-box">
+            <img class="img-responsive" src="assets/labs.png" alt="facility"/>
             <div class="name">Labs</div>
         </div>
+        </div>
       </div>
-     </div>
-     <div class="col-lg-12 margintop30">
-        <div class="col-lg-6">
+     
+     <div class="col s12 margintop30">
+        <div class="col s6">
            <div class="box" [routerLink]="['/preference-imaging']">
-            <span class="glyphicon glyphicon-remove "></span>
+            <div class="img-box">
+            <img class="img-responsive" src="assets/imaging.png" alt="facility"/>
              <div class="name">Imaging</div>
+            </div>
           </div>
         </div>
           
-        <div class="col-lg-6">
+        <div class="col s6">
             <div class="box" [routerLink]="['/preference-surgical']">
-                <span class="glyphicon glyphicon-remove "></span>
+                <div class="img-box">
+                <img class="img-responsive" src="assets/surgical.png" alt="facility"/>
                 <div class="name">Surgical</div>
             </div>
           </div>

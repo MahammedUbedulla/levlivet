@@ -5,14 +5,26 @@
     overflow:scroll;
     overflow-y: auto;
     height:950px; 
-    width: 100%;   
+    width: 80%;   
 }
 .box
 {
     border: 1px solid black;
     width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
 }
 .margintop30
 {
     margin-top: 30px;
+}
+.img-box
+{
+    width:200px;
+    height:200px;
+    border:1px solid #333;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
