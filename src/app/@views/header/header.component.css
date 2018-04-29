@@ -34,6 +34,12 @@
  .profile img {
    
     width: 40px;
+    padding-bottom: 25px;
+
+  }
+  .arrow-icon
+  {
+    padding-bottom: 25px; 
   }
   h5
   {
@@ -111,4 +117,8 @@ display: block;
 .rotate-180 {
     transform: rotate(180deg);
     transition: all .25s ease-out;
+}
+nav i.material-icons {
+    
+    padding-top: 0px;
 }
