@@ -47,6 +47,7 @@ table{
     display: inline-block;
     border: 1px solid #5a4989 !important;
     padding: 15px;
+    margin-bottom: 40px;
  }
  .searchfield
  {
@@ -55,6 +56,7 @@ table{
      margin-bottom: 5px;
      border:1px solid #5a4989;
      display: inline-flex;
+  
     
  }  
  .button, input
@@ -190,6 +192,8 @@ label {
 }
 .searchfield input{
     width: 98% !important;
+    border-bottom: 0;
+    margin: 0 0 0px 0;
 }
 .searchtable
 {
@@ -219,4 +223,8 @@ margin-top: 60px;
 .float-left
 {
     float: left;
+}
+.input
+{
+    border-bottom: 0px !important;
 }

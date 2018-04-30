@@ -1,81 +1,61 @@
-<div class="maincontainer row">
-  <div class="row input-pad">
-      <h3  class="md-headline purpleColor ">Symptoms</h3>
-  </div>
-<table class="bordertable">
-      <div class="col s6 input-pad marginTop30">
-          <table class="full-width " cellspacing="0">
-              <tr>
-                  <td class="">
-                      <mat-form-field>
-                          <mat-select placeholder="Purpose of visit">
-                              <mat-option *ngFor="let visit of purposeOfVisit" [value]="visit.value">
-                                  {{ visit.viewValue }}
-                              </mat-option>
-                          </mat-select>
-                      </mat-form-field>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="">
-                      <mat-form-field>
-                          <mat-select placeholder="Primary Symptoms">
-                              <mat-option *ngFor="let psymptoms of primarySymptoms" [value]="psymptoms.value">
-                                  {{ psymptoms.viewValue }}
-                              </mat-option>
-                          </mat-select>
-                      </mat-form-field>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="">
-                      <mat-form-field>
-                          <mat-select placeholder="Secondary Symptoms">
-                              <mat-option *ngFor="let sSymptoms of secondarySymptoms" [value]="sSymptoms.value">
-                                  {{ sSymptoms.viewValue }}
-                              </mat-option>
-                          </mat-select>
-                      </mat-form-field>
-                  </td>
-              </tr>
-          </table>
-      </div>
-
-        <div class="col s6 input-pad marginTop30 ">
-
-          <table class="full-width" cellspacing="0">
-              <tr>
-                  <td class="">
-                      <p>Chronic Others</p>
-                      <mat-radio-group>
-                          <mat-radio-button value="1">Yes</mat-radio-button>
-                          <mat-radio-button value="2">No</mat-radio-button>
-                      </mat-radio-group>
-                  </td>
-              </tr>
-              <tr>
-                  <td class="">
-                      <mat-form-field>
-                          <mat-select placeholder="Chronics Symptoms">
-                              <mat-option *ngFor="let chSymptoms of chronicsSymptoms" [value]="chSymptoms.value">
-                                  {{ chSymptoms.viewValue }}
-                              </mat-option>
-                          </mat-select>
-                      </mat-form-field>
-                  </td>
-              </tr>
-          </table>
+<div class="maincontainer marginLeft50 row">
+        <div class="row ">
+            <h3 class="md-headline purpleColor ">Symptoms</h3>
         </div>
-        <div class="col s12 input-pad marginBottom30 ">
-                    <mat-form-field class="full-width">
+    
+        <div class="col s12 input-pad paddingTop30 border">
+            <div class="col s6 input-pad ">
+                <mat-form-field>
+                    <mat-select placeholder="Purpose of visit">
+                        <mat-option *ngFor="let visit of purposeOfVisit" [value]="visit.value">
+                            {{ visit.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+                <mat-form-field>
+                    <mat-select placeholder="Primary Symptoms">
+                        <mat-option *ngFor="let psymptoms of primarySymptoms" [value]="psymptoms.value">
+                            {{ psymptoms.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+                <mat-form-field>
+                    <mat-select placeholder="Secondary Symptoms">
+                        <mat-option *ngFor="let sSymptoms of secondarySymptoms" [value]="sSymptoms.value">
+                            {{ sSymptoms.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+    
+            <div class="col s6 input-pad ">
+    
+                <p>Chronic Others</p>
+                <mat-radio-group>
+                    <mat-radio-button value="1">Yes</mat-radio-button>
+                    <mat-radio-button value="2">No</mat-radio-button>
+                </mat-radio-group>
+    
+                <mat-form-field>
+                    <mat-select placeholder="Chronics Symptoms">
+                        <mat-option *ngFor="let chSymptoms of chronicsSymptoms" [value]="chSymptoms.value">
+                            {{ chSymptoms.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+    
+            </div>
+            <div class="col s12 input-pad marginBottom30 ">
+                <mat-form-field class="full-width">
                     <textarea matInput placeholder="Other Notes"></textarea>
-                    </mat-form-field>
-        
-             
-         </div>
-</table>
-       <div class="nextbutton">
+                </mat-form-field>
+    
+            </div>
+        </div>
+        <div class="nextbutton">
             <button mat-button mat-raised-button>Next</button>
-       </div>
-
-</div>
+        </div>
+    
+    </div>

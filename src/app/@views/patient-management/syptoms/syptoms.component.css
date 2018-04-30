@@ -13,8 +13,8 @@
 
 .input-pad
 {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .contact-pad {
@@ -57,23 +57,30 @@ button
     overflow:scroll;
     overflow-y: auto;
     height:950px; 
-    width: 100%;   
+    width: 90%;   
 }
 .nextbutton
 {
     float: right;
 }
-.bordertable
+
+.paddingTop30
 {
-    border: 1px solid #5a4989;
-    text-align: left;
-    width: 100%;
-    margin-top: 30px;
-}
-.marginTop30
-{
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .marginBottom30{
     margin-bottom: 30px;
+}
+.border
+{
+    border: 1px solid #5a4989;   
+}
+.marginTop30
+{
+    margin-bottom: 30px;
+}
+
+.marginLeft50
+{
+    margin-left: 50px;
 }

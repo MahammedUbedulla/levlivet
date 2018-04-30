@@ -41,9 +41,7 @@ button
 {
     background-color:#5a4989;
     color: white;
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 200px;
+     width: 200px;
     height: 50px;
     font-size: 17px;
 }
@@ -106,4 +104,31 @@ padding-right: 20px;
 .marginbottom20
 {
     margin-bottom: 20px;
+}
+.marginBottom30
+{
+    margin-bottom: 30px;
+}
+.border
+{
+    border: 1px solid #5a4989;
+    padding: 20px;
+   
+}
+.paddingLeft30
+{
+    padding-left: 30px;
+}
+.marginLeft50
+{
+    margin-left: 50px;
+}
+.input-field label
+{
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+.marginTop40
+{
+    margin-top: 40px;
 }

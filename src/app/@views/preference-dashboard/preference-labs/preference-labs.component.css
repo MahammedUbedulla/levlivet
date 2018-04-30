@@ -45,7 +45,6 @@ table tr td:nth-last-child(2)
 .margin50
 {
     margin-top: 50px;
-    margin-left: 15px;
     margin-bottom: 20px;
 }
 .shadded-color
@@ -58,7 +57,11 @@ table tr td:nth-last-child(2)
 }
 .margin-left20
 {
-    margin-left: 20px;
+    margin-left: 20px !important;
+}
+.margin-left10
+{
+    margin-left: 10px !important;
 }
 button
 {
@@ -69,4 +72,8 @@ button
     padding-bottom: 5px;
     padding-right: 15px;
     padding-left: 15px;
+}
+.marginLeft50
+{
+    margin-left: 50px;
 }

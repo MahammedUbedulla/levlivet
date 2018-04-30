@@ -1,95 +1,86 @@
 <div class="maincontainer row">
-  <div class=" input-pad">
-      <h3 class="md-headline purpleColor ">Vitals</h3>
-  </div>
-  <table  class="bodycontainer bordertable">
-      <div class="col s6 input-pad marginTop30 marginBottom30">
-          <table class="full-width" cellspacing="0">
-              <tr class="margintop50">
-              <td>
-                  <mat-form-field class="full-width">
-                      <input matInput placeholder="Height">
-                  </mat-form-field>
-              </td>
-              <td>
-                      <mat-form-field class="full-width">
-                          <input matInput placeholder="Weight">
-                      </mat-form-field>
-              </td>
-              <td>
-                      <mat-form-field class="full-width">
-                          <input matInput placeholder="BMI">
-                      </mat-form-field>
-              </td>
-              </tr>
-              <label>Blood Pressure</label>
-              <tr>
-                  <td>
-                  <mat-form-field class="full-width">
-                      <input matInput placeholder="Systolic">
-                  </mat-form-field>
-                 </td>
-                <td>
-                      <mat-form-field class="full-width">
-                              <input matInput placeholder="Diastolic">
-                          </mat-form-field>
-                </td>
-              </tr>
-
-          
-               <label>Blood Sugar</label>
-              <tr >
-                  <td >
-                  <mat-form-field class="full-width">
-                      <input matInput placeholder="With Fasting">
-                  </mat-form-field>
-              </td>
-              <td >
-                      <mat-form-field class="full-width">
-                              <input matInput placeholder="WithOut Fasting">
-                          </mat-form-field>
-              </td>
-              </tr>
-      
-              <tr >
-                  <td colspan="3">
-                  <mat-form-field class="full-width">
-                      <textarea matInput placeholder="Other Observations"></textarea>
-                  </mat-form-field>
-              </td>
-              </tr>
-          </table>
-      </div>
-
-      <div class="col s6 input-pad marginTop30 ">
-          <table class="full-width marginLeft30" cellspacing="0">
-                  <tr>
-                          <mat-form-field class="full-width">
-                              <input matInput placeholder="Pulse">
-                          </mat-form-field>
-                  </tr>
-                  <tr>
-                          <mat-form-field class="full-width">
-                              <input matInput placeholder="Respiratory Rate(RR)">
-                          </mat-form-field>
-                  </tr>
-
-              <tr>
-                  <mat-form-field class="full-width">
-                      <input matInput placeholder="Blood Temp(c)">
-                  </mat-form-field>
-              </tr>
-              <tr>
-                  <mat-form-field class="full-width">
-                      <input matInput placeholder="Oxygen %">
-                  </mat-form-field>
-              </tr>
-          </table>
-
-      </div>
+        <div class=" input-pad marginBottom30">
+            <h3 class="md-headline purpleColor ">Vitals</h3>
+        </div>
+        <div class="row border padding30 marginLeft50">
+        <div class="col s6">
+            <div class="row">
+                <div class="input-field floatleft">
+                    <label for="height">Height</label>
+                    <input id="height" type="text" class="validate">
+                 </div>
     
-    </table>
-  <div class="nextbutton">
-    <button mat-button mat-raised-button >Next</button>
-  </div>
-</div>
+                <div class="input-field floatleft">
+                    <label for="height">Weight</label>
+                    <input id="weight" type="text" class="validate">
+                 </div>
+    
+                <div class="input-field floatleft">
+                    <label for="bmi">BMI</label>
+                    <input id="bmi" type="text" class="validate">
+                </div>
+            </div>
+
+
+            <div class="row">
+                    <h4 >Blood Pressure</h4>
+                    <div class="input-field floatleft">
+                        <label for="systolic">Systolic</label>
+                        <input id="systolic" type="text" class="validate">
+                     </div>
+        
+                    <div class="input-field floatleft">
+                        <label for="diastolic">Diastolic</label>
+                        <input id="diastolic" type="text" class="validate">
+                    </div>
+                </div>
+
+                <div class="row">
+                        <h4 >Blood Sugar</h4>
+                        <div class="input-field floatleft">
+                            <label for="withfasting">With Fasting</label>
+                            <input id="withfasting" type="text" class="validate">
+                         </div>
+            
+                        <div class="input-field floatleft">
+                            <label for="withoutfasting">WithOut Fasting</label>
+                            <input id="withoutfasting" type="text" class="validate">
+                        </div>
+                    </div>
+
+                    <div class="input-field ">
+                            <label for="oo">Other Observation</label>
+                            <input id="oo" type="text" class="validate">
+                         </div>
+        </div>
+
+        <div class="col s6">
+                <div class="row">
+                    <div class="input-field  ">
+                        <label for="height">Pulse</label>
+                        <input id="height" type="text" class="validate">
+                     </div>
+        
+                    <div class="input-field marginTop30">
+                        <label for="rr">Respiratory Rate</label>
+                        <input id="rr" type="text" class="validate">
+                     </div>
+        
+                    <div class="input-field marginTop30 ">
+                        <label for="vp">Blood Temp(c)</label>
+                        <input id="bp" type="text" class="validate">
+                    </div>
+
+                    <div class="input-field marginTop30">
+                            <label for="oxygen">Oxygen%</label>
+                            <input id="oxygen" type="text" class="validate">
+                        </div>
+                </div>
+
+            </div>
+
+            </div>
+                <div class="nextbutton">
+                        <button mat-button mat-raised-button>Next</button>
+                    </div>
+    </div>

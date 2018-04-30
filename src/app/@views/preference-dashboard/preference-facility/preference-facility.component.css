@@ -43,3 +43,7 @@ button
     color: black;
     text-decoration: underline;
 }
+.marginLeft50
+{
+    margin-left: 50px;
+}
